@@ -1,0 +1,8 @@
+Random Forest example:
+
+python rf.py -t train_data.csv -d test_data.csv -tf -cv -c rf --criterion entropy --max_depth 10 --min_samples_leaf 4 --max_leaf_nodes 50 --n_estimators 100 --nr_splits 5 -gs
+(-gs) param does grid search and takes some time (up to 10min), 
+therefore make sure to remove -gs param it if you want quick results
+
+
+LSTM:

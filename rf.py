@@ -43,10 +43,10 @@ def convert_arg(arg):
 def create_arg_parser():
     ''' Creates an argument parser '''
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--train_file", default='train_data.csv', type=str,
-                        help="Train file to learn from (default train_data.csv)")
-    parser.add_argument("-d", "--test_file", default='test_data.csv', type=str,
-                        help="Dev file to evaluate on (default test_data.csv)")
+    parser.add_argument("-t", "--train_file", default='train_data_it.csv', type=str,
+                        help="Train file to learn from (default train_data_it.csv)")
+    parser.add_argument("-d", "--test_file", default='test_data_it.csv', type=str,
+                        help="Dev file to evaluate on (default test_data_it.csv)")
     parser.add_argument("-s", "--sentiment", action="store_true",
                         help="Do sentiment analysis (2-class problem)")
     parser.add_argument("-tf", "--tfidf", action="store_true",
@@ -99,8 +99,8 @@ def create_arg_parser():
 # Load your dataset
 def load_data(file_path):
     data = pd.read_csv(file_path)  # assuming your data is in CSV format
-    X = data.drop(columns=["NST_M_Label"])  # Features (remove 'label' column)
-    y = data["NST_M_Label"]  # Labels (1.0 = Healthy, 2.0 = AML)
+    X = data.drop(columns=["IT_M_Label"])  # Features (remove 'IT_M_Label' or 'NST_M_Label' column)
+    y = data["IT_M_Label"]
     return X, y
 
 def measures(Y_test, Y_pred):
@@ -328,8 +328,8 @@ if __name__ == "__main__":
     args = create_arg_parser()
 
     # Load training and testing datasets
-    X_train, Y_train = load_data('train_data.csv')
-    X_test, Y_test = load_data('test_data.csv')
+    X_train, Y_train = load_data('train_data_it.csv')
+    X_test, Y_test = load_data('test_data_it.csv')
 
     # load vectorizer (tfidf or bag of words)
     vec=get_vector(args)

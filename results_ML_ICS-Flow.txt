@@ -1,0 +1,110 @@
+-c rf --criterion entropy --max_depth 10 --min_samples_leaf 4 --max_leaf_nodes 50 --n_estimators 100 --nr_splits 5
+Fold 1:
+  Accuracy: 0.93146
+  Precision: 0.93616
+  Recall: 0.93146
+  F1-score: 0.92106
+
+Fold 2:
+  Accuracy: 0.93146
+  Precision: 0.91648
+  Recall: 0.93146
+  F1-score: 0.92061
+
+Fold 3:
+  Accuracy: 0.92590
+  Precision: 0.91143
+  Recall: 0.92590
+  F1-score: 0.91537
+
+Fold 4:
+  Accuracy: 0.92615
+  Precision: 0.93096
+  Recall: 0.92615
+  F1-score: 0.91619
+
+Fold 5:
+  Accuracy: 0.92286
+  Precision: 0.90837
+  Recall: 0.92286
+  F1-score: 0.91248
+
+Cross-validation results:
+Accuracy: 0.92757 (± 0.00338)
+Precision: 0.92068 (± 0.01095)
+Recall: 0.92757 (± 0.00338)
+F1-score: 0.91714 (± 0.00326)
+
+Accuracy train: 92.59484%
+Precision train: [0.99972 0.00000 0.68812 0.81188 0.81702 1.00000] (91.07233%)
+Recall train: [1.00000 0.00000 0.44984 0.95148 0.95144 0.83564] (92.59484%)
+F-score train: [0.99986 0.00000 0.54403 0.87615 0.87912 0.91046] (91.49437%)
+Confusion matrix train:
+[[3618    0    0    0    0    0]
+ [   0    0   36   52   40    0]
+ [   0    0  139   83   87    0]
+ [   0    0    3  902   43    0]
+ [   0    0    2   47  960    0]
+ [   1    0   22   27   45  483]]
+
+
+anova.py results:
+            Feature  Importance
+9       startOffset    0.115682
+7             start    0.110855
+10        endOffset    0.106959
+8               end    0.100688
+56     sAckDelayAvg    0.057141
+3             rMACs    0.039804
+15        rBytesSum    0.034448
+33  rInterPacketAvg    0.033545
+57     rAckDelayAvg    0.029237
+32  sInterPacketAvg    0.029192
+13         rPackets    0.028533
+25      rPayloadSum    0.026535
+23            rLoad    0.025680
+11         duration    0.023765
+14        sBytesSum    0.023296
+12         sPackets    0.022127
+1          rAddress    0.021437
+24      sPayloadSum    0.021152
+53     rAckDelayMax    0.020533
+52     sAckDelayMax    0.019995
+5              rIPs    0.019740
+22            sLoad    0.017954
+31      rPayloadAvg    0.007813
+2             sMACs    0.007811
+35             rttl    0.007788
+21        rBytesAvg    0.007332
+34             sttl    0.006454
+43         rPshRate    0.005526
+20        sBytesAvg    0.004467
+42         sPshRate    0.004086
+29      rPayloadMin    0.003848
+30      sPayloadAvg    0.003505
+28      sPayloadMin    0.001524
+19        rBytesMin    0.001454
+55     rAckDelayMin    0.001438
+4              sIPs    0.001388
+18        sBytesMin    0.001339
+49          rWinTCP    0.001254
+0          sAddress    0.001084
+48          sWinTCP    0.000980
+27      rPayloadMax    0.000848
+54     sAckDelayMin    0.000465
+17        rBytesMax    0.000463
+46         sRstRate    0.000203
+45         rSynRate    0.000191
+37         rAckRate    0.000166
+16        sBytesMax    0.000135
+26      sPayloadMax    0.000097
+40         sFinRate    0.000020
+41         rFinRate    0.000018
+44         sSynRate    0.000004
+51    rFragmentRate    0.000000
+50    sFragmentRate    0.000000
+6          protocol    0.000000
+36         sAckRate    0.000000
+47         rRstRate    0.000000
+38         sUrgRate    0.000000
+39         rUrgRate    0.000000
