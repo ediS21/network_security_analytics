@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 # Load dataset, skipping rows with NaN values
-data = pd.read_csv('balanced_data_with_encoded_labels.csv').dropna()
+data = pd.read_csv('balanced_data_IPV4-TCP_IT_NST.csv').dropna()
 
 # First split for NST_M_Label
 X_nst = data.drop(columns=["NST_M_Label"])  # Features for NST_M_Label
