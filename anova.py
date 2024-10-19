@@ -38,11 +38,11 @@ sorted_features_it = sorted(anova_results_it.items(), key=lambda x: x[1])
 sorted_features_nst = sorted(anova_results_nst.items(), key=lambda x: x[1])
 
 # Display the top 10 significant features for both labels
-print("Top 10 significant features for IT_M_Label based on ANOVA test:")
-print(sorted_features_it[:10])
+# print("Top 10 significant features for IT_M_Label based on ANOVA test:")
+# print(sorted_features_it[:10])
 
-print("\nTop 10 significant features for NST_M_Label based on ANOVA test:")
-print(sorted_features_nst[:10])
+# print("\nTop 10 significant features for NST_M_Label based on ANOVA test:")
+# print(sorted_features_nst[:10])
 
 # Sample RandomForest with IT_M_Label
 rf = RandomForestClassifier()
@@ -53,4 +53,4 @@ importances = rf.feature_importances_
 feature_importance = pd.DataFrame({'Feature': features, 'Importance': importances})
 feature_importance = feature_importance.sort_values('Importance', ascending=False)
 
-print(feature_importance.head(10))
+print(feature_importance)
