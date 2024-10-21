@@ -3,7 +3,7 @@ from scipy import stats
 from sklearn.ensemble import RandomForestClassifier
 
 # Sample dataset based on your input (you can load your CSV file)
-data = pd.read_csv('balanced_data_with_encoded_labels.csv')
+data = pd.read_csv('preprocessing_data/processed_westermo.csv')
 
 # List of features (excluding the labels and any irrelevant columns like start_hour, start_day, etc.)
 features = ['sAddress', 'rAddress', 'sMACs', 'rMACs', 'sIPs', 'rIPs', 'protocol', 'start', 'end', 'startOffset', 'endOffset', 

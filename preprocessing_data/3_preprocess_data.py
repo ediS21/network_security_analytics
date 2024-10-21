@@ -3,7 +3,13 @@ from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from datetime import datetime
 import os
 
-df = pd.read_csv('IPV4-TCP.csv')
+# Get the current directory
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Build the relative path to the CSV file
+csv_file_path = os.path.join(current_dir, '../westermo/flows/preprocessed/IPV4-TCP.csv')
+
+df = pd.read_csv(csv_file_path)
 
 if not os.path.exists('mappings_IPV4-TCP'):
     os.makedirs('mappings_IPV4-TCP')

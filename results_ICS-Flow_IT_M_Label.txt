@@ -1,0 +1,162 @@
+C:\Users\edisa\Desktop\NSA_repo\network_security_analytics>python rf.py -t train_data_it.csv -d test_data_it.csv -cv -c rf --criterion entropy --max_depth 10 --min_samples_leaf 4 --max_leaf_nodes 50 --n_estimators 100 --nr_splits 5 -gs
+Best parameters: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 100}
+Best cross-validation score: 0.87901
+
+All results:
+Mean F1-score: 0.77505 (std: 0.00644) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 100}
+Mean F1-score: 0.77457 (std: 0.00700) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 200}
+Mean F1-score: 0.77530 (std: 0.00654) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 100}
+Mean F1-score: 0.77418 (std: 0.00709) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 200}
+Mean F1-score: 0.77552 (std: 0.00662) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 100}
+Mean F1-score: 0.77377 (std: 0.00645) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 200}
+Mean F1-score: 0.77676 (std: 0.00688) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 100}
+Mean F1-score: 0.77593 (std: 0.00723) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 200}
+Mean F1-score: 0.77633 (std: 0.00694) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 100}
+Mean F1-score: 0.77570 (std: 0.00741) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 200}
+Mean F1-score: 0.77693 (std: 0.00594) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 100}
+Mean F1-score: 0.77549 (std: 0.00698) for params: {'rf__criterion': 'gini', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 200}
+Mean F1-score: 0.83260 (std: 0.00559) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 100}
+Mean F1-score: 0.83212 (std: 0.00516) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 200}
+Mean F1-score: 0.83244 (std: 0.00632) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 100}
+Mean F1-score: 0.83213 (std: 0.00454) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 200}
+Mean F1-score: 0.83047 (std: 0.00475) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 100}
+Mean F1-score: 0.83150 (std: 0.00456) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 200}
+Mean F1-score: 0.87395 (std: 0.00147) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 100}
+Mean F1-score: 0.87256 (std: 0.00502) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 200}
+Mean F1-score: 0.87440 (std: 0.00148) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 100}
+Mean F1-score: 0.87291 (std: 0.00413) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 200}
+Mean F1-score: 0.87106 (std: 0.00263) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 100}
+Mean F1-score: 0.87149 (std: 0.00405) for params: {'rf__criterion': 'gini', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 200}
+Mean F1-score: 0.79877 (std: 0.00533) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 100}
+Mean F1-score: 0.79765 (std: 0.00456) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 200}
+Mean F1-score: 0.79865 (std: 0.00527) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 100}
+Mean F1-score: 0.79791 (std: 0.00477) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 200}
+Mean F1-score: 0.79870 (std: 0.00545) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 100}
+Mean F1-score: 0.79787 (std: 0.00442) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 200}
+Mean F1-score: 0.79989 (std: 0.00611) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 100}
+Mean F1-score: 0.79978 (std: 0.00436) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 200}
+Mean F1-score: 0.80064 (std: 0.00572) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 100}
+Mean F1-score: 0.80036 (std: 0.00461) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 200}
+Mean F1-score: 0.80009 (std: 0.00562) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 100}
+Mean F1-score: 0.80058 (std: 0.00470) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 10, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 200}
+Mean F1-score: 0.83764 (std: 0.00571) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 100}
+Mean F1-score: 0.83548 (std: 0.00528) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 200}
+Mean F1-score: 0.83792 (std: 0.00611) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 100}
+Mean F1-score: 0.83566 (std: 0.00575) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 200}
+Mean F1-score: 0.83738 (std: 0.00528) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 100}
+Mean F1-score: 0.83521 (std: 0.00451) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 50, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 200}
+Mean F1-score: 0.87747 (std: 0.00415) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 100}
+Mean F1-score: 0.87594 (std: 0.00266) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 1, 'rf__n_estimators': 200}
+Mean F1-score: 0.87901 (std: 0.00309) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 100}
+Mean F1-score: 0.87581 (std: 0.00294) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 2, 'rf__n_estimators': 200}
+Mean F1-score: 0.87787 (std: 0.00288) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 100}
+Mean F1-score: 0.87515 (std: 0.00307) for params: {'rf__criterion': 'entropy', 'rf__max_depth': 20, 'rf__max_leaf_nodes': 100, 'rf__min_samples_leaf': 4, 'rf__n_estimators': 200}
+Fold 1:
+  Accuracy: 0.89527
+  Precision: 0.89199
+  Recall: 0.89527
+  F1-score: 0.88199
+
+Fold 2:
+  Accuracy: 0.88875
+  Precision: 0.87667
+  Recall: 0.88875
+  F1-score: 0.87527
+
+Fold 3:
+  Accuracy: 0.89242
+  Precision: 0.89756
+  Recall: 0.89242
+  F1-score: 0.87911
+
+Fold 4:
+  Accuracy: 0.88916
+  Precision: 0.89440
+  Recall: 0.88916
+  F1-score: 0.87581
+
+Fold 5:
+  Accuracy: 0.89690
+  Precision: 0.90198
+  Recall: 0.89690
+  F1-score: 0.88284
+
+Cross-validation results:
+Accuracy: 0.89250 (± 0.00323)
+Precision: 0.89252 (± 0.00860)
+Recall: 0.89250 (± 0.00323)
+F1-score: 0.87901 (± 0.00309)
+
+Accuracy test: 88.65526%
+Precision test: [0.85350 0.50000 0.78302 0.90503 0.88841 0.99557] (87.71038%)
+Recall test: [0.85740 0.01575 0.77090 1.00000 0.99711 0.80901] (88.65526%)
+F-score test: [0.85545 0.03053 0.77691 0.95015 0.93963 0.89264] (87.21088%)
+Confusion matrix test:
+[[ 938    2   41   56   55    2]
+ [  87    2   19   14    5    0]
+ [  20    0  249   14   40    0]
+ [   0    0    0  953    0    0]
+ [   3    0    0    0 1035    0]
+ [  51    0    9   16   30  449]]
+
+For IT_M_Lables:
+anova.py results:
+            Feature  Importance
+9       startOffset    0.115682
+7             start    0.110855
+10        endOffset    0.106959
+8               end    0.100688
+56     sAckDelayAvg    0.057141
+3             rMACs    0.039804
+15        rBytesSum    0.034448
+33  rInterPacketAvg    0.033545
+57     rAckDelayAvg    0.029237
+32  sInterPacketAvg    0.029192
+13         rPackets    0.028533
+25      rPayloadSum    0.026535
+23            rLoad    0.025680
+11         duration    0.023765
+14        sBytesSum    0.023296
+12         sPackets    0.022127
+1          rAddress    0.021437
+24      sPayloadSum    0.021152
+53     rAckDelayMax    0.020533
+52     sAckDelayMax    0.019995
+5              rIPs    0.019740
+22            sLoad    0.017954
+31      rPayloadAvg    0.007813
+2             sMACs    0.007811
+35             rttl    0.007788
+21        rBytesAvg    0.007332
+34             sttl    0.006454
+43         rPshRate    0.005526
+20        sBytesAvg    0.004467
+42         sPshRate    0.004086
+29      rPayloadMin    0.003848
+30      sPayloadAvg    0.003505
+28      sPayloadMin    0.001524
+19        rBytesMin    0.001454
+55     rAckDelayMin    0.001438
+4              sIPs    0.001388
+18        sBytesMin    0.001339
+49          rWinTCP    0.001254
+0          sAddress    0.001084
+48          sWinTCP    0.000980
+27      rPayloadMax    0.000848
+54     sAckDelayMin    0.000465
+17        rBytesMax    0.000463
+46         sRstRate    0.000203
+45         rSynRate    0.000191
+37         rAckRate    0.000166
+16        sBytesMax    0.000135
+26      sPayloadMax    0.000097
+40         sFinRate    0.000020
+41         rFinRate    0.000018
+44         sSynRate    0.000004
+51    rFragmentRate    0.000000
+50    sFragmentRate    0.000000
+6          protocol    0.000000
+36         sAckRate    0.000000
+47         rRstRate    0.000000
+38         sUrgRate    0.000000
+39         rUrgRate    0.000000
