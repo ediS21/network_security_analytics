@@ -171,3 +171,4 @@ test_data_it.csv
 test_data_it.csv
 train_data_it.csv
 train_data_nst.csv
+lstm/dev_data_it.csv
