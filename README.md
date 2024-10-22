@@ -208,3 +208,70 @@ traffic data set. Retrieved from <https://github.com/westermo>
     Proceedings, Part I, pages 132–144. Springer, 2022.
  1. P. E. Strandberg. Automated System-Level Software Testing of Industrial Networked Embedded
     Systems. PhD thesis, Mälardalen University, 2021.
+
+### Dataset Explanation
+
+1. **sAddress**: Source IP address (object).
+2. **rAddress**: Destination IP address (object).
+3. **sMACs**: Source MAC address (object).
+4. **rMACs**: Destination MAC address (object).
+5. **sIPs**: Source IP address (object) - has some missing values.
+6. **rIPs**: Destination IP address (object) - has some missing values.
+7. **protocol**: Communication protocol used (e.g., TCP, ARP) (object).
+8. **startDate**: Timestamp of the start of traffic (object).
+9. **endDate**: Timestamp of the end of traffic (object).
+10. **start**: Start time in float format (float64).
+11. **end**: End time in float format (float64).
+12. **startOffset**: Start offset time (float64).
+13. **endOffset**: End offset time (float64).
+14. **duration**: Duration of the traffic flow (float64).
+15. **sPackets**: Number of packets sent (int64).
+16. **rPackets**: Number of packets received (int64).
+17. **sBytesSum**: Total bytes sent (int64).
+18. **rBytesSum**: Total bytes received (int64).
+19. **sBytesMax**: Maximum bytes sent in a single packet (float64) - has some missing values.
+20. **rBytesMax**: Maximum bytes received in a single packet (float64) - has some missing values.
+21. **sBytesMin**: Minimum bytes sent in a single packet (float64) - has some missing values.
+22. **rBytesMin**: Minimum bytes received in a single packet (float64) - has some missing values.
+23. **sBytesAvg**: Average bytes sent per packet (float64) - has some missing values.
+24. **rBytesAvg**: Average bytes received per packet (float64) - has some missing values.
+25. **sLoad**: Load sent (float64).
+26. **rLoad**: Load received (float64).
+27. **sPayloadSum**: Total payload sent (int64).
+28. **rPayloadSum**: Total payload received (int64).
+29. **sPayloadMax**: Maximum payload sent in a single packet (float64) - has some missing values.
+30. **rPayloadMax**: Maximum payload received in a single packet (float64) - has some missing values.
+31. **sPayloadMin**: Minimum payload sent in a single packet (float64) - has some missing values.
+32. **rPayloadMin**: Minimum payload received in a single packet (float64) - has some missing values.
+33. **sPayloadAvg**: Average payload sent per packet (float64) - has some missing values.
+34. **rPayloadAvg**: Average payload received per packet (float64) - has some missing values.
+35. **sInterPacketAvg**: Average inter-packet arrival time for sent packets (float64) - has some missing values.
+36. **rInterPacketAvg**: Average inter-packet arrival time for received packets (float64) - has some missing values.
+37. **sttl**: Time-to-live for sent packets (float64) - has some missing values.
+38. **rttl**: Time-to-live for received packets (float64) - has some missing values.
+39. **sAckRate**: Acknowledgment rate for sent packets (float64) - has some missing values.
+40. **rAckRate**: Acknowledgment rate for received packets (float64) - has some missing values.
+41. **sUrgRate**: Urgent rate for sent packets (float64) - has some missing values.
+42. **rUrgRate**: Urgent rate for received packets (float64) - has some missing values.
+43. **sFinRate**: Finish rate for sent packets (float64) - has some missing values.
+44. **rFinRate**: Finish rate for received packets (float64) - has some missing values.
+45. **sPshRate**: Push rate for sent packets (float64) - has some missing values.
+46. **rPshRate**: Push rate for received packets (float64) - has some missing values.
+47. **sSynRate**: Synchronize rate for sent packets (float64) - has some missing values.
+48. **rSynRate**: Synchronize rate for received packets (float64) - has some missing values.
+49. **sRstRate**: Reset rate for sent packets (float64) - has some missing values.
+50. **rRstRate**: Reset rate for received packets (float64) - has some missing values.
+51. **sWinTCP**: TCP window size for sent packets (float64) - has some missing values.
+52. **rWinTCP**: TCP window size for received packets (float64) - has some missing values.
+53. **sFragmentRate**: Fragmentation rate for sent packets (float64) - has some missing values.
+54. **rFragmentRate**: Fragmentation rate for received packets (float64) - has some missing values.
+55. **sAckDelayMax**: Maximum acknowledgment delay for sent packets (float64) - has some missing values.
+56. **rAckDelayMax**: Maximum acknowledgment delay for received packets (float64) - has some missing values.
+57. **sAckDelayMin**: Minimum acknowledgment delay for sent packets (float64) - has some missing values.
+58. **rAckDelayMin**: Minimum acknowledgment delay for received packets (float64) - has some missing values.
+59. **sAckDelayAvg**: Average acknowledgment delay for sent packets (float64) - has some missing values.
+60. **rAckDelayAvg**: Average acknowledgment delay for received packets (float64) - has some missing values.
+61. **IT_B_Label**: Binary label indicating whether the traffic is benign (0) or malicious (1) (int64).
+62. **IT_M_Label**: Multiclass label indicating the type of malicious traffic (object).
+63. **NST_B_Label**: Another binary label indicating whether the traffic is benign (0) or malicious (1) (int64).
+64. **NST_M_Label**: Another multiclass label indicating the type of malicious traffic (object).
