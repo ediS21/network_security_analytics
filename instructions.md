@@ -21,3 +21,8 @@
         conda install cuda-cudart cuda-version=12
         conda install -c conda-forge dask-ml
         ```
+    - For LSTM
+        ```bash
+        conda install keras tensorflow numpy pandas scikit-learn ipykernel imbalanced-learn
+        pip install shap
+        ```
