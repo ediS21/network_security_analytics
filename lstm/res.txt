@@ -1,0 +1,26 @@
+Adam optimizer
+Training with batch_size: 32, learning_rate: 0.01
+0.7677
+Test pred acc: 0.755
+
+SGD optimizer
+Training with batch_size: 8, learning_rate: 0.01
+0.7427
+pred acc: 0.724
+
+
+RMSprop optimizer
+Training with batch_size: 16, learning_rate: 0.1
+0.7326
+pred acc 0.716
+
+Adafactor optimizer
+Training with batch_size: 16, learning_rate: 0.1
+0.7894
+pred acc:  0.769
+
+
+AdamW optimizer
+Training with batch_size: 32, learning_rate: 0.01
+0.7496
+pred acc: 0.737
