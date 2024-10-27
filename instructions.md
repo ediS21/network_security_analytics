@@ -25,4 +25,5 @@
         ```bash
         conda install keras tensorflow numpy pandas scikit-learn ipykernel imbalanced-learn
         pip install shap
+        conda install -c conda-forge notebook
         ```
